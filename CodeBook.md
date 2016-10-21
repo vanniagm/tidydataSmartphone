@@ -31,7 +31,8 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 #### Run_analysis.R script
 This is a script that process and cleans the data performing the following tasks:
 
-* Merges the original sets of data for the training set and the test set
+* Downloads the "UCI Human Activity Recognition Using Smartphones Data Set" zip file from the url: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, unzips it and cretaes the directory "UCI HAR Dataset" in the current working directory with several .txt files described in the README.txt file of the created directory.
+* Merges the original sets of data for the training set ("/train/X_train.txt") and the test set ("/test/X_test.txt")
 * Extracts only the measurements on the -mean()- and standard deviation -std()- for each measurement. 
 * Appends the descriptive activites with descriptive names as a factor variable to the data set 
 * Appropriately labels the data set with descriptive variable names using the “feature” vector in the original dataset file
